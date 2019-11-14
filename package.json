@@ -1,7 +1,7 @@
 {
   "name": "@rawewhat/routra",
   "description": "RoutRa is a StoRa plugin for simple routing solution in React.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "scripts": {
     "build": "babel src -o index.js",
