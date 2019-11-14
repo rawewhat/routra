@@ -150,25 +150,25 @@ var Router = function Router() {
     route = _useStora2[0].routra.route
 
   var config = getConfig()
+
+  var Component = _react['default'].createElement('span', null, 'Error')
+
+  config.forEach(function(cfg) {
+    if (cfg.path.length <= 1 && cfg.path.startsWith('/'))
+      Component = _react['default'].cloneElement(cfg.screen)
+    else {
+      var path = cfg.path.startsWith('/') ? cfg.path.replace('/', '') : cfg.path
+      console.log('path', path, 'route', route)
+
+      if (path === route) {
+        var Comp = cfg.screen
+        Component = _react['default'].createElement(Comp, null)
+      }
+    }
+  })
   var Screen = (0, _react.useMemo)(
     function() {
-      return config.map(function(cfg) {
-        if (cfg.path === '' || cfg.path === '/')
-          return _react['default'].cloneElement(cfg.screen, {
-            key: cfg.path
-          })
-        var path = cfg.path.startsWith('/')
-          ? cfg.path.replace('/', '')
-          : cfg.path
-        console.log('path', path, 'route', route)
-
-        if (path === route) {
-          var Comp = cfg.screen
-          return _react['default'].createElement(Comp, {
-            key: path
-          })
-        }
-      })
+      return Component
     },
     [route]
   )
@@ -187,7 +187,7 @@ var Link = function Link(_ref) {
 
   var _useStora3 = (0, _stora['default'])(),
     _useStora4 = _slicedToArray(_useStora3, 2),
-    actions = _useStora4[1]
+    visit = _useStora4[1].routra.visit
 
   return (0, _react.useMemo)(function() {
     return _react['default'].createElement(
@@ -199,8 +199,11 @@ var Link = function Link(_ref) {
           textDecoration: 'underline'
         },
         onClick: function onClick() {
-          path = path.startsWith('/') ? path.replace('/', '') : path
-          actions.routra.visit(path)
+          if (path.length > 1 && path.startsWith('/')) {
+            path = path.replace('/', '')
+          }
+
+          visit(path)
           window.history.pushState(
             {
               title: title,
