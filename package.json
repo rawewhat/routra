@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/rawewhat/routra#readme",
   "dependencies": {
-    "@rawewhat/stora": "file:../stora"
+    "@rawewhat/stora": "^0.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.7.0",
