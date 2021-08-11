@@ -724,10 +724,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@rawewhat/stora@@rawewhat/stora":
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/@rawewhat/stora/-/stora-0.2.1.tgz#10569d53f49f480c02aa962681c80c560ec32b8a"
-  integrity sha512-DHmMejYi4PSUrsa5NdXk4gEyDJfvkL5hQZOm2XLns3beIVaXiiE3H1ypmIEPfp6PBunae2Y0EVt9mgiu4jzw9A==
+"@rawewhat/stora@^0.2.1":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@rawewhat/stora/-/stora-0.2.4.tgz#8088e3a0b3a76503ec2d66597cbc2ac3223e296b"
+  integrity sha512-CfRWxa+pcNxE4z912Pv33OR4s3rMG+xE3NS1038/xkbczOQWP1HcteU7dUH0+43+0bH0975L5PdadWp7o2M4Dg==
 
 abbrev@1:
   version "1.1.1"
@@ -1798,9 +1798,9 @@ path-is-absolute@^1.0.0:
   integrity sha1-F0uSaHNVNP+8es5r9TpanhtcX18=
 
 path-parse@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
-  integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
 pify@^4.0.1:
   version "4.0.1"
